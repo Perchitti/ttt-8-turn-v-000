@@ -15,6 +15,11 @@ def input_to_index(user_input)
 end
 
 
+def move(board, index, player = "X")
+    board[index] = player
+end
+
+
 
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
